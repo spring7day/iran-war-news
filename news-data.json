@@ -1,66 +1,6 @@
 {
-  "lastUpdated": "2026-03-02T15:29:39.220862+09:00",
+  "lastUpdated": "2026-03-02T15:34:07.723400+09:00",
   "items": [
-    {
-      "id": "trump-iran-operation-4-weeks",
-      "time": "2026-03-02T14:00:00Z",
-      "title": "트럼프 \"이란 작전 4~5주 더 계속될 것\" 예고",
-      "summary": "트럼프 대통령이 이란에 대한 군사작전이 향후 4~5주 더 계속될 것이라고 전망. 추가 미군 사상자 발생 가능성을 언급하며 장기전 대비 시사.",
-      "source": "CBS News",
-      "url": "https://www.cbsnews.com/live-updates/us-iran-war-israel-supreme-leader-khamenei-funeral-day-2/",
-      "category": "diplomacy",
-      "importance": "breaking"
-    },
-    {
-      "id": "iran-death-toll-201",
-      "time": "2026-03-02T13:00:00Z",
-      "title": "이란 사망자 201명으로 증가...부상자 700여명",
-      "summary": "이란 적신월사가 미-이스라엘 공습으로 인한 사망자가 201명, 부상자가 약 700명에 달한다고 발표. 민간인 피해가 계속 증가 중.",
-      "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "israel-fresh-strikes-tehran",
-      "time": "2026-03-02T12:00:00Z",
-      "title": "이스라엘, 테헤란 중심부에 새로운 공습 감행",
-      "summary": "이스라엘군이 일요일 테헤란 중심부의 이란 군사시설에 대규모 공습 실시. 이스라엘 공군은 제공권 확보를 위한 작전이라고 밝혀.",
-      "source": "NBC News",
-      "url": "https://www.nbcnews.com/world/iran/live-blog/iran-attack-strikes-us-israel-trump-khamenei-dead-live-updates-rcna261172",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "israel-casualties-11-total",
-      "time": "2026-03-02T11:00:00Z",
-      "title": "이스라엘 사망자 최소 11명...베이트 셰메시 9명 사망",
-      "summary": "이란의 미사일 공격으로 베이트 셰메시에서 9명, 텔아비브에서 2명 등 최소 11명의 이스라엘인이 사망. 이란 보복 공격으로 인한 피해 확대.",
-      "source": "Jewish Insider",
-      "url": "https://jewishinsider.com/2026/03/iran-war-update-missile-strikes-israel-casualties/",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "hezbollah-joins-iran-war",
-      "time": "2026-03-02T10:00:00Z",
-      "title": "헤즈볼라, 이란 편에서 전쟁 참전...이스라엘에 로켓 공격",
-      "summary": "레바논 헤즈볼라가 이란을 지원하기 위해 전쟁에 공식 참전했다고 발표. 이스라엘 북부 지역에 대규모 로켓 공격을 감행하며 중동 전쟁이 더욱 확대.",
-      "source": "CNN",
-      "url": "https://www.cnn.com/world/live-news/us-israel-iran-attack-03-01-26-intl",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "trump-vows-continue-attacks",
-      "time": "2026-03-02T08:00:00Z",
-      "title": "트럼프 \"모든 목표 달성할 때까지 이란 공격 계속할 것\"",
-      "summary": "트럼프 대통령이 이란에 대한 군사 작전이 모든 목표가 달성될 때까지 계속될 것이라고 선언. 전투 작전이 진행 중이며 추가 사상자 발생 가능성 경고.",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/03/01/us-iran-live-updates-khamenei-death-trump-gulf-strikes.html",
-      "category": "diplomacy",
-      "importance": "breaking"
-    },
     {
       "id": "iran-missile-breaches-israel-defense",
       "time": "2026-03-02T05:30:00Z",
@@ -70,6 +10,16 @@
       "url": "https://www.aljazeera.com/news/2026/3/2/dramatic-moment-irans-retaliatory-missile-barrage-hits-israel",
       "category": "military",
       "importance": "major"
+    },
+    {
+      "id": "trump-iran-operation-4-weeks",
+      "time": "2026-03-02T05:00:00Z",
+      "title": "트럼프 \"이란 작전 4~5주 더 계속될 것\" 예고",
+      "summary": "트럼프 대통령이 이란에 대한 군사작전이 향후 4~5주 더 계속될 것이라고 전망. 추가 미군 사상자 발생 가능성을 언급하며 장기전 대비 시사.",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/live-updates/us-iran-war-israel-supreme-leader-khamenei-funeral-day-2/",
+      "category": "diplomacy",
+      "importance": "breaking"
     },
     {
       "id": "iran-no-us-talks-larijani",
@@ -88,6 +38,16 @@
       "summary": "헤즈볼라가 하메네이 사망에 대한 보복으로 이스라엘에 로켓 공격을 감행하자, 이스라엘이 베이루트를 폭격. 레바논 전선 확대로 중동 전쟁 전면화 우려.",
       "source": "Al Jazeera",
       "url": "https://www.aljazeera.com/news/2026/3/2/israel-bombs-beirut-after-hezbollah-launches-rocket-attack",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "iran-death-toll-201",
+      "time": "2026-03-02T04:00:00Z",
+      "title": "이란 사망자 201명으로 증가...부상자 700여명",
+      "summary": "이란 적신월사가 미-이스라엘 공습으로 인한 사망자가 201명, 부상자가 약 700명에 달한다고 발표. 민간인 피해가 계속 증가 중.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
       "category": "military",
       "importance": "breaking"
     },
@@ -112,12 +72,32 @@
       "importance": "major"
     },
     {
+      "id": "israel-fresh-strikes-tehran",
+      "time": "2026-03-02T03:00:00Z",
+      "title": "이스라엘, 테헤란 중심부에 새로운 공습 감행",
+      "summary": "이스라엘군이 일요일 테헤란 중심부의 이란 군사시설에 대규모 공습 실시. 이스라엘 공군은 제공권 확보를 위한 작전이라고 밝혀.",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/world/iran/live-blog/iran-attack-strikes-us-israel-trump-khamenei-dead-live-updates-rcna261172",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
       "id": "hezbollah-lebanon-50-villages-evacuate",
       "time": "2026-03-02T03:00:00Z",
       "title": "이스라엘, 레바논 50개 마을 주민 대피령…헤즈볼라 로켓 교전",
       "summary": "이스라엘군이 이란 지원 헤즈볼라의 로켓 공격 후 레바논 내 50개 이상의 마을 주민에게 대피령 발령. 이스라엘-레바논 전선도 동시에 확대되는 양상.",
       "source": "BBC News",
       "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "israel-casualties-11-total",
+      "time": "2026-03-02T02:00:00Z",
+      "title": "이스라엘 사망자 최소 11명...베이트 셰메시 9명 사망",
+      "summary": "이란의 미사일 공격으로 베이트 셰메시에서 9명, 텔아비브에서 2명 등 최소 11명의 이스라엘인이 사망. 이란 보복 공격으로 인한 피해 확대.",
+      "source": "Jewish Insider",
+      "url": "https://jewishinsider.com/2026/03/iran-war-update-missile-strikes-israel-casualties/",
       "category": "military",
       "importance": "breaking"
     },
@@ -142,6 +122,16 @@
       "importance": "major"
     },
     {
+      "id": "hezbollah-joins-iran-war",
+      "time": "2026-03-02T01:00:00Z",
+      "title": "헤즈볼라, 이란 편에서 전쟁 참전...이스라엘에 로켓 공격",
+      "summary": "레바논 헤즈볼라가 이란을 지원하기 위해 전쟁에 공식 참전했다고 발표. 이스라엘 북부 지역에 대규모 로켓 공격을 감행하며 중동 전쟁이 더욱 확대.",
+      "source": "CNN",
+      "url": "https://www.cnn.com/world/live-news/us-israel-iran-attack-03-01-26-intl",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
       "id": "yonhap-day3-tehran-explosions",
       "time": "2026-03-02T01:00:00Z",
       "title": "교전 사흘째…테헤란 곳곳 폭발음 계속",
@@ -149,6 +139,16 @@
       "source": "연합뉴스",
       "url": "https://www.yna.co.kr",
       "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "trump-vows-continue-attacks",
+      "time": "2026-03-01T23:00:00Z",
+      "title": "트럼프 \"모든 목표 달성할 때까지 이란 공격 계속할 것\"",
+      "summary": "트럼프 대통령이 이란에 대한 군사 작전이 모든 목표가 달성될 때까지 계속될 것이라고 선언. 전투 작전이 진행 중이며 추가 사상자 발생 가능성 경고.",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/03/01/us-iran-live-updates-khamenei-death-trump-gulf-strikes.html",
+      "category": "diplomacy",
       "importance": "breaking"
     },
     {
