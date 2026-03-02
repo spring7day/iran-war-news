@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-03-02T16:03:27.687095+09:00",
+  "lastUpdated": "2026-03-02T17:03:20.716869+09:00",
   "items": [
+    {
+      "id": "israel-kills-31-lebanon-bbc-live",
+      "time": "2026-03-02T07:30:00Z",
+      "title": "이스라엘 공격으로 레바논 최소 31명 사망…중동 전역 이란 공격 계속",
+      "summary": "이스라엘이 헤즈볼라 공격에 대한 보복으로 레바논을 타격해 최소 31명 사망. 이란의 공격은 사이프러스 영국군 기지와 쿠웨이트 미군 항공기까지 확대됐으며, 미군 항공기 여러 대가 쿠웨이트에서 추락.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "iran-strikes-uk-base-cyprus",
+      "time": "2026-03-02T07:00:00Z",
+      "title": "이란, 사이프러스 영국군 기지 공격…NATO 회원국으로 확전 우려",
+      "summary": "이란이 사이프러스에 주둔한 영국군 기지를 공격한 것으로 알려져 충격. NATO 회원국인 영국 기지 공격으로 서방의 대응 수위에 대한 우려가 급격히 고조.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
+      "category": "military",
+      "importance": "breaking"
+    },
     {
       "id": "iran-leaders-calm-khamenei-succession",
       "time": "2026-03-02T06:55:00Z",
@@ -36,6 +56,16 @@
       "time": "2026-03-02T06:30:00Z",
       "title": "이란, 키프로스 영국군 기지에 드론 공격 의심…전선 유럽까지 확대",
       "summary": "이란이 키프로스에 위치한 영국군 기지에 드론 공격을 감행한 것으로 의심되고 있다. 사실로 확인될 경우 전쟁이 유럽 영토까지 확대되는 심각한 상황.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "us-military-planes-crash-kuwait",
+      "time": "2026-03-02T06:30:00Z",
+      "title": "쿠웨이트서 미군 항공기 여러 대 추락…이란 공격 피해",
+      "summary": "쿠웨이트에서 미군 항공기 여러 대가 추락했다고 BBC가 보도. 이란의 쿠웨이트 미군 기지 공격과 연관된 것으로 추정되며 추가 인명피해 우려.",
       "source": "BBC News",
       "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
       "category": "military",
