@@ -101,7 +101,7 @@ function filter(btn, type) {
 fetch('news-data.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => r.json())
   .then(data => {
-    allItems = data.items || [];
+    allItems = (data.items || []).sort((a,b) => new Date(b.time) - new Date(a.time));
     document.getElementById("lastUpdated").textContent = formatTime(data.lastUpdated);
     document.getElementById("cnt-all").textContent = allItems.length + "건";
     render(allItems);
