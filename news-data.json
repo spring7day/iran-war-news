@@ -1,6 +1,176 @@
 {
-  "lastUpdated": "2026-03-02T09:00:00+09:00",
+  "lastUpdated": "2026-03-02T14:14:11.331933+09:00",
   "items": [
+    {
+      "id": "trump-iran-operation-4-weeks",
+      "time": "2026-03-02T14:00:00Z",
+      "title": "트럼프 \"이란 작전 4~5주 더 계속될 것\" 예고",
+      "summary": "트럼프 대통령이 이란에 대한 군사작전이 향후 4~5주 더 계속될 것이라고 전망. 추가 미군 사상자 발생 가능성을 언급하며 장기전 대비 시사.",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/live-updates/us-iran-war-israel-supreme-leader-khamenei-funeral-day-2/",
+      "category": "diplomacy",
+      "importance": "breaking"
+    },
+    {
+      "id": "iran-death-toll-201",
+      "time": "2026-03-02T13:00:00Z",
+      "title": "이란 사망자 201명으로 증가...부상자 700여명",
+      "summary": "이란 적신월사가 미-이스라엘 공습으로 인한 사망자가 201명, 부상자가 약 700명에 달한다고 발표. 민간인 피해가 계속 증가 중.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "israel-fresh-strikes-tehran",
+      "time": "2026-03-02T12:00:00Z",
+      "title": "이스라엘, 테헤란 중심부에 새로운 공습 감행",
+      "summary": "이스라엘군이 일요일 테헤란 중심부의 이란 군사시설에 대규모 공습 실시. 이스라엘 공군은 제공권 확보를 위한 작전이라고 밝혀.",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/world/iran/live-blog/iran-attack-strikes-us-israel-trump-khamenei-dead-live-updates-rcna261172",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "israel-casualties-11-total",
+      "time": "2026-03-02T11:00:00Z",
+      "title": "이스라엘 사망자 최소 11명...베이트 셰메시 9명 사망",
+      "summary": "이란의 미사일 공격으로 베이트 셰메시에서 9명, 텔아비브에서 2명 등 최소 11명의 이스라엘인이 사망. 이란 보복 공격으로 인한 피해 확대.",
+      "source": "Jewish Insider",
+      "url": "https://jewishinsider.com/2026/03/iran-war-update-missile-strikes-israel-casualties/",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "hezbollah-joins-iran-war",
+      "time": "2026-03-02T10:00:00Z",
+      "title": "헤즈볼라, 이란 편에서 전쟁 참전...이스라엘에 로켓 공격",
+      "summary": "레바논 헤즈볼라가 이란을 지원하기 위해 전쟁에 공식 참전했다고 발표. 이스라엘 북부 지역에 대규모 로켓 공격을 감행하며 중동 전쟁이 더욱 확대.",
+      "source": "CNN",
+      "url": "https://www.cnn.com/world/live-news/us-israel-iran-attack-03-01-26-intl",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "trump-vows-continue-attacks",
+      "time": "2026-03-02T08:00:00Z",
+      "title": "트럼프 \"모든 목표 달성할 때까지 이란 공격 계속할 것\"",
+      "summary": "트럼프 대통령이 이란에 대한 군사 작전이 모든 목표가 달성될 때까지 계속될 것이라고 선언. 전투 작전이 진행 중이며 추가 사상자 발생 가능성 경고.",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/03/01/us-iran-live-updates-khamenei-death-trump-gulf-strikes.html",
+      "category": "diplomacy",
+      "importance": "breaking"
+    },
+    {
+      "id": "pakistan-karachi-protests-9-killed",
+      "time": "2026-03-02T04:00:00Z",
+      "title": "파키스탄 카라치 반미 시위로 9명 사망...50명 부상",
+      "summary": "파키스탄 카라치에서 미국의 이란 공격에 반대하는 대규모 시위가 발생해 보안군과 충돌. 최소 9명이 사망하고 50여명이 부상.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "hezbollah-lebanon-50-villages-evacuate",
+      "time": "2026-03-02T03:00:00Z",
+      "title": "이스라엘, 레바논 50개 마을 주민 대피령…헤즈볼라 로켓 교전",
+      "summary": "이스라엘군이 이란 지원 헤즈볼라의 로켓 공격 후 레바논 내 50개 이상의 마을 주민에게 대피령 발령. 이스라엘-레바논 전선도 동시에 확대되는 양상.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "asian-markets-plunge-iran-war",
+      "time": "2026-03-02T02:00:00Z",
+      "title": "아시아 증시 일제 급락...닛케이 2% 하락, 코스피도 하락",
+      "summary": "미-이란 전쟁 확전 우려로 아시아 증시가 일제히 급락. 일본 닛케이 지수는 2% 하락하며 개장, 한국과 중국 증시도 동반 하락세.",
+      "source": "뉴스1",
+      "url": "https://www.news1.kr/world/usa-canada/6087191",
+      "category": "economy",
+      "importance": "major"
+    },
+    {
+      "id": "yonhap-day3-tehran-explosions",
+      "time": "2026-03-02T01:00:00Z",
+      "title": "교전 사흘째…테헤란 곳곳 폭발음 계속",
+      "summary": "미-이스라엘 대 이란 교전이 사흘째 지속되며 테헤란 곳곳에서 폭발음이 이어지고 있다. 이란 군은 방공망을 총가동 중이나 연속 공습으로 일부 무력화된 것으로 알려져.",
+      "source": "연합뉴스",
+      "url": "https://www.yna.co.kr",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "bbc-gulf-allies-civilian-infra",
+      "time": "2026-03-01T22:00:00Z",
+      "title": "이란, 걸프 동맹국 민간 인프라까지 타격…확전 신호",
+      "summary": "이란이 미군 기지뿐 아니라 걸프 아랍국가의 민간 인프라까지 공격 대상으로 삼아 확전 신호 분석. 사우디, UAE, 바레인, 쿠웨이트 등 친미 국가 전반이 피해.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c1jk922dgjgo",
+      "category": "military",
+      "importance": "major"
+    },
+    {
+      "id": "kuwait-casualties-1-killed-32-wounded",
+      "time": "2026-03-01T20:00:00Z",
+      "title": "쿠웨이트에서 1명 사망·32명 부상...이란 미사일 공격 피해",
+      "summary": "쿠웨이트 보건부가 이란의 미사일 공격으로 1명이 사망하고 32명이 부상했다고 발표. 걸프 지역 미군 기지 공격의 부수적 피해.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "category": "military",
+      "importance": "major"
+    },
+    {
+      "id": "oman-mediation-door-open",
+      "time": "2026-03-01T18:00:00Z",
+      "title": "오만 외무장관 \"미-이란 외교 협상 여지 여전히 존재\"",
+      "summary": "오만 외무장관이 전쟁 중에도 미국과 이란 간 외교 협상의 여지가 남아있다고 발언. 오만은 핵 협상에서 중재자 역할을 해왔음.",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/03/01/us-iran-live-updates-khamenei-death-trump-gulf-strikes.html",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "bbc-iran-regime-intact-crisis",
+      "time": "2026-03-01T18:00:00Z",
+      "title": "BBC: 이란 정권 여전히 건재…생존 지도부 위기 대응 총력",
+      "summary": "하메네이 사망 이후에도 이란 생존 지도부가 건재함을 과시하며 위기 대응에 총력. 향후 며칠이 이란 정권의 존속 여부를 가를 분수령이 될 것이라는 분석.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cx2lgvg5rl1o",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "chinese-citizens-injured-iran-war",
+      "time": "2026-03-01T16:00:00Z",
+      "title": "중국 \"미-이란 전쟁에 중국인 부상...상황 면밀 주시\"",
+      "summary": "중국 외교부가 미-이란 전쟁 중 중국 시민이 부상당했다고 발표. 중국 정부는 상황 변화를 면밀히 주시하고 있으며 자국민 보호에 나설 것이라고 밝혀.",
+      "source": "뉴스1",
+      "url": "https://www.news1.kr/world/northeast-asia/6087072",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "iran-12-israelis-killed",
+      "time": "2026-03-01T15:00:00Z",
+      "title": "이란 보복 공격으로 이스라엘인 12명 사망...베이트 셰메시 시나고그 파괴",
+      "summary": "이란의 탄도미사일 공격으로 예루살렘 인근 베이트 셰메시에서 이스라엘인 12명 사망. 시나고그가 직격탄을 맞아 파괴되고 주변 건물도 심각한 피해.",
+      "source": "Washington Post",
+      "url": "https://www.washingtonpost.com/world/2026/02/28/israel-strikes-iran-live-updates/",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "bbc-school-strike-153-dead",
+      "time": "2026-03-01T15:00:00Z",
+      "title": "이란 학교 피격 사망자 153명으로 집계…미-이스라엘 강력 부인",
+      "summary": "이란 당국이 학교 공습 사망자를 153명으로 집계했다고 발표. 미국은 '조사 중'이라고 했고, 이스라엘군은 '해당 지역 작전 없었다'며 책임 부인.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c1l7rvqq51eo",
+      "category": "military",
+      "importance": "breaking"
+    },
     {
       "id": "iran-ballistic-missile-us-carrier",
       "time": "2026-03-01T14:00:00Z",
@@ -20,6 +190,16 @@
       "url": "https://www.npr.org/2026/03/01/nx-s1-5731365/us-israeli-strikes-region",
       "category": "military",
       "importance": "breaking"
+    },
+    {
+      "id": "bbc-iran-internet-blackout",
+      "time": "2026-03-01T12:00:00Z",
+      "title": "이란 인터넷 거의 완전 차단…내부 공황 속 일부는 '해방감'",
+      "summary": "이란 정부가 공습 이후 인터넷을 거의 전면 차단한 가운데, 내부에선 공황 상태가 이어지고 있다. 일부 이란인은 외부에 '안도감'을 표현하며 정권 교체 기대감도 목격.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c05v8jzjn40o",
+      "category": "other",
+      "importance": "major"
     },
     {
       "id": "iran-school-bombing-casualties",
@@ -92,6 +272,26 @@
       "importance": "major"
     },
     {
+      "id": "un-guterres-diplomacy-squandered",
+      "time": "2026-02-28T12:00:00Z",
+      "title": "유엔 사무총장 \"이란 공격은 외교 기회 낭비\"...국제사회 우려",
+      "summary": "구테흐스 유엔 사무총장이 미국과 이스라엘의 이란 공습을 비판하며 외교적 해결 기회가 사라졌다고 우려 표명. 국제사회는 전면전 확산 우려.",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/02/1167062",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "bbc-khamenei-operation-planning",
+      "time": "2026-02-28T10:00:00Z",
+      "title": "하메네이 제거 작전, 수개월 기획…공격 수시간 전 핵심 정보 입수",
+      "summary": "BBK 보도에 따르면 하메네이의 테헤란 중심부 은신처를 파악하는 핵심 정보가 공격 몇 시간 전에야 입수돼 작전이 최종 승인됐다. 수개월간의 준비 끝에 이루어진 정밀 타격.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c86y5540vnno",
+      "category": "military",
+      "importance": "major"
+    },
+    {
       "id": "khamenei-killed-operation-epic-fury",
       "time": "2026-02-28T08:00:00Z",
       "title": "이란 최고지도자 하메네이 사망...미-이스라엘 합동 공습",
@@ -110,16 +310,6 @@
       "url": "https://www.washingtonpost.com/national-security/2026/02/28/us-israel-military-operation-epic-fury-iran/",
       "category": "military",
       "importance": "breaking"
-    },
-    {
-      "id": "un-guterres-diplomacy-squandered",
-      "time": "2026-02-28T12:00:00Z",
-      "title": "유엔 사무총장 \"이란 공격은 외교 기회 낭비\"...국제사회 우려",
-      "summary": "구테흐스 유엔 사무총장이 미국과 이스라엘의 이란 공습을 비판하며 외교적 해결 기회가 사라졌다고 우려 표명. 국제사회는 전면전 확산 우려.",
-      "source": "UN News",
-      "url": "https://news.un.org/en/story/2026/02/1167062",
-      "category": "diplomacy",
-      "importance": "major"
     }
   ]
 }
