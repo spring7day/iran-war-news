@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T14:14:11.331933+09:00",
+  "lastUpdated": "2026-03-02T15:29:39.220862+09:00",
   "items": [
     {
       "id": "trump-iran-operation-4-weeks",
@@ -62,12 +62,52 @@
       "importance": "breaking"
     },
     {
+      "id": "iran-missile-breaches-israel-defense",
+      "time": "2026-03-02T05:30:00Z",
+      "title": "이란 미사일 이스라엘 방어망 뚫는 순간 영상 공개…충격",
+      "summary": "이란의 탄도미사일이 이스라엘의 철의 돔·애로우 방어 시스템을 뚫고 지상 목표물에 명중하는 영상이 공개돼 충격. 이스라엘 방공망의 한계 노출.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/2/dramatic-moment-irans-retaliatory-missile-barrage-hits-israel",
+      "category": "military",
+      "importance": "major"
+    },
+    {
+      "id": "iran-no-us-talks-larijani",
+      "time": "2026-03-02T05:00:00Z",
+      "title": "이란 \"미국과 협상 없다\"…핵협상 재개설 강력 부인",
+      "summary": "이란 국가안보회의 라리자니 총서기가 미국과의 핵협상 재개 가능성을 보도한 미국 언론을 강력 부인. '협상은 없다'는 입장을 명확히 하며 전쟁 지속 의지 천명.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live",
+      "category": "diplomacy",
+      "importance": "breaking"
+    },
+    {
+      "id": "israel-bombs-beirut-hezbollah",
+      "time": "2026-03-02T04:30:00Z",
+      "title": "이스라엘, 베이루트 폭격…헤즈볼라 로켓 공격 보복",
+      "summary": "헤즈볼라가 하메네이 사망에 대한 보복으로 이스라엘에 로켓 공격을 감행하자, 이스라엘이 베이루트를 폭격. 레바논 전선 확대로 중동 전쟁 전면화 우려.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/2/israel-bombs-beirut-after-hezbollah-launches-rocket-attack",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
       "id": "pakistan-karachi-protests-9-killed",
       "time": "2026-03-02T04:00:00Z",
       "title": "파키스탄 카라치 반미 시위로 9명 사망...50명 부상",
       "summary": "파키스탄 카라치에서 미국의 이란 공격에 반대하는 대규모 시위가 발생해 보안군과 충돌. 최소 9명이 사망하고 50여명이 부상.",
       "source": "Al Jazeera",
       "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "gulf-states-dilemma-iran-war",
+      "time": "2026-03-02T04:00:00Z",
+      "title": "걸프 국가들 딜레마…이란 공격 후 '참전 vs 중립' 기로",
+      "summary": "이란의 걸프 지역 공격으로 사우디, UAE 등 걸프 국가들이 참전 또는 중립 사이에서 심각한 선택 압박을 받고 있다는 분석. 참전 시 이란의 추가 공격 우려.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/2/after-irans-salvo-hit-their-skylines-will-gulf-states-enter-the-war",
       "category": "diplomacy",
       "importance": "major"
     },
@@ -89,6 +129,16 @@
       "source": "뉴스1",
       "url": "https://www.news1.kr/world/usa-canada/6087191",
       "category": "economy",
+      "importance": "major"
+    },
+    {
+      "id": "iran-new-supreme-leader-days",
+      "time": "2026-03-02T02:00:00Z",
+      "title": "이란 외무장관 \"수일 내 새 최고지도자 선출 가능\"",
+      "summary": "이란 아라그치 외무장관이 헌법 절차에 따라 수일 내 새 최고지도자가 선출될 수 있다고 밝혀. 테헤란은 40일 애도 기간을 선포하며 저항 의지를 강조.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/3/1/iran-foreign-minister-suggests-new-supreme-leader-may-be-chosen-within-days",
+      "category": "diplomacy",
       "importance": "major"
     },
     {
