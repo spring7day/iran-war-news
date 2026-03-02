@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-03-02T15:34:07.723400+09:00",
+  "lastUpdated": "2026-03-02T16:03:27.687095+09:00",
   "items": [
+    {
+      "id": "iran-leaders-calm-khamenei-succession",
+      "time": "2026-03-02T06:55:00Z",
+      "title": "이란 지도부, 하메네이 승계 과정서 침착함 과시…결속 강조",
+      "summary": "이란 생존 지도부가 하메네이 사후 승계 과정을 차분하게 진행하며 내부 결속을 강조. 외부의 기대와 달리 정권 붕괴 조짐 없이 헌법 절차 진행 중.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "tehran-hospital-attacked-baby-evacuated",
+      "time": "2026-03-02T06:50:00Z",
+      "title": "이스라엘, 테헤란 간디병원 공격…인큐베이터 신생아 긴급 대피",
+      "summary": "이스라엘이 테헤란 북부 간디병원을 공격해 인큐베이터 안 신생아를 포함한 환자들이 긴급 대피했다. 민간 의료시설 공격으로 국제사회 강한 비난 예상.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/3/2/baby-and-patients-evacuated-as-israel-attacks-tehran-hospital",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "us-embassy-kuwait-missile-drone-warning",
+      "time": "2026-03-02T06:40:00Z",
+      "title": "주쿠웨이트 미 대사관, 미사일·드론 위협 지속 경보 발령",
+      "summary": "주쿠웨이트 미국 대사관이 이란의 미사일 및 드론 위협이 계속되고 있다며 자국민에게 대피 경보를 발령. 걸프 지역 전반에 걸쳐 위협 수위 상승 중.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live",
+      "category": "military",
+      "importance": "major"
+    },
+    {
+      "id": "iran-drone-strike-uk-base-cyprus",
+      "time": "2026-03-02T06:30:00Z",
+      "title": "이란, 키프로스 영국군 기지에 드론 공격 의심…전선 유럽까지 확대",
+      "summary": "이란이 키프로스에 위치한 영국군 기지에 드론 공격을 감행한 것으로 의심되고 있다. 사실로 확인될 경우 전쟁이 유럽 영토까지 확대되는 심각한 상황.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
+      "category": "military",
+      "importance": "breaking"
+    },
     {
       "id": "iran-missile-breaches-israel-defense",
       "time": "2026-03-02T05:30:00Z",
@@ -29,6 +69,16 @@
       "source": "Al Jazeera",
       "url": "https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live",
       "category": "diplomacy",
+      "importance": "breaking"
+    },
+    {
+      "id": "israel-kills-dozens-lebanon",
+      "time": "2026-03-02T05:00:00Z",
+      "title": "이스라엘, 레바논서 수십명 사망케 해…헤즈볼라와 전면전 양상",
+      "summary": "레바논 보건부가 이스라엘 공습으로 최소 31명이 사망했다고 발표. 헤즈볼라와 이스라엘 간 교전이 전면전 양상으로 확대되며 중동 전쟁 다중 전선화.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
+      "category": "military",
       "importance": "breaking"
     },
     {
