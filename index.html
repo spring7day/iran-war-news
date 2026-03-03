@@ -3,112 +3,665 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>이란 전쟁 속보</title>
+<title>이란 전쟁 뉴스 | Iran War News</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; background: #fff; color: #1d1d1f; line-height: 1.5; }
-.header { padding: 48px 24px 28px; border-bottom: 1px solid #e5e5ea; max-width: 800px; margin: 0 auto; }
-.header h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.5px; }
-.header .meta { font-size: 13px; color: #6e6e73; margin-top: 6px; }
-.filters { padding: 14px 24px; max-width: 800px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #f0f0f0; position: sticky; top: 0; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); z-index: 10; }
-.filter-btn { padding: 6px 14px; border-radius: 20px; border: 1px solid #d2d2d7; background: #fff; font-size: 13px; cursor: pointer; color: #1d1d1f; transition: all 0.15s; }
-.filter-btn.active, .filter-btn:hover { background: #1d1d1f; color: #fff; border-color: #1d1d1f; }
-.timeline { max-width: 800px; margin: 0 auto; padding: 0 24px 60px; }
-.item { padding: 20px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 16px; }
-.item:last-child { border-bottom: none; }
-.item-time { font-size: 12px; color: #6e6e73; min-width: 72px; padding-top: 3px; white-space: nowrap; }
-.item-body { flex: 1; min-width: 0; }
-.item-badges { display: flex; gap: 6px; margin-bottom: 6px; align-items: center; flex-wrap: wrap; }
-.badge { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; }
-.badge-breaking { background: #fff0f0; color: #d92b2b; }
-.badge-major { background: #fff5e6; color: #c05200; }
-.badge-normal { background: #f5f5f7; color: #6e6e73; }
-.badge-military { background: #eef2ff; color: #3451b2; }
-.badge-diplomacy { background: #f0fdf4; color: #166534; }
-.badge-economy { background: #fefce8; color: #854d0e; }
-.badge-other { background: #f5f5f7; color: #6e6e73; }
-.item-title { font-size: 15px; font-weight: 600; margin-bottom: 5px; line-height: 1.4; }
-.item[data-importance="breaking"] .item-title { color: #d92b2b; }
-.item-summary { font-size: 13px; color: #3d3d3f; line-height: 1.65; }
-.item-source { display: inline-block; margin-top: 7px; font-size: 12px; color: #0071e3; text-decoration: none; }
-.item-source:hover { text-decoration: underline; }
-.loading { padding: 48px 24px; text-align: center; color: #6e6e73; max-width: 800px; margin: 0 auto; }
-.empty { padding: 48px 24px; text-align: center; color: #6e6e73; }
-@media (max-width: 600px) {
-  .header { padding: 32px 16px 20px; }
-  .header h1 { font-size: 24px; }
-  .filters { padding: 10px 16px; }
-  .timeline { padding: 0 16px 48px; }
-  .item { gap: 10px; }
-  .item-time { min-width: 58px; font-size: 11px; }
-  .item-title { font-size: 14px; }
-}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    min-height: 100vh;
+  }
+  header {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e5;
+    padding: 20px 24px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  header h1 span { color: #e63946; }
+  .meta-bar {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #6e6e73;
+  }
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    padding: 12px 24px;
+    background: #f5f5f7;
+    overflow-x: auto;
+    border-bottom: 1px solid #e0e0e5;
+  }
+  .filter-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1.5px solid #d2d2d7;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s;
+    font-family: inherit;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: #1d1d1f;
+    color: #fff;
+    border-color: #1d1d1f;
+  }
+  .main { padding: 16px 16px 40px; max-width: 800px; margin: 0 auto; }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: box-shadow 0.15s;
+  }
+  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+  .card-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .cat {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+    letter-spacing: 0.2px;
+  }
+  .cat-military { background: #fce8e8; color: #c62828; }
+  .cat-diplomacy { background: #e3eeff; color: #1a56db; }
+  .cat-economy { background: #fef9e7; color: #b7770d; }
+  .cat-other { background: #f0f0f0; color: #555; }
+  .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .imp-breaking { background: #e63946; color: #fff; animation: pulse 1.5s infinite; }
+  .imp-major { background: #ff9500; color: #fff; }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; } 50% { opacity: 0.7; }
+  }
+  .time { font-size: 11px; color: #8e8e93; }
+  .source { font-size: 11px; color: #8e8e93; margin-left: auto; }
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  .card-title a {
+    color: #1d1d1f;
+    text-decoration: none;
+  }
+  .card-title a:hover { color: #0071e3; text-decoration: underline; }
+  .card-summary {
+    font-size: 13px;
+    color: #3d3d3f;
+    line-height: 1.5;
+  }
+  .count-badge {
+    display: inline-block;
+    background: #e63946;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  @media (max-width: 480px) {
+    header { padding: 14px 16px 12px; }
+    header h1 { font-size: 18px; }
+    .main { padding: 12px 10px 40px; }
+    .card { padding: 14px; }
+  }
 </style>
 </head>
 <body>
-<div class="header">
-  <h1>🔴 이란 전쟁 속보</h1>
-  <p class="meta">마지막 업데이트: <span id="lastUpdated">불러오는 중...</span> · 1시간마다 자동 갱신</p>
+<header>
+  <h1>🇮🇷 이란 전쟁 뉴스 <span>LIVE</span> <span class="count-badge">50</span></h1>
+  <div class="meta-bar">최종 업데이트: 2026-03-03 13:09 KST &nbsp;·&nbsp; Jarvis by OpenClaw</div>
+</header>
+
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterCards('all')">전체</button>
+  <button class="filter-btn" onclick="filterCards('military')">🔴 군사</button>
+  <button class="filter-btn" onclick="filterCards('diplomacy')">🔵 외교</button>
+  <button class="filter-btn" onclick="filterCards('economy')">🟡 경제</button>
+  <button class="filter-btn" onclick="filterCards('breaking')">🚨 속보만</button>
 </div>
-<div class="filters">
-  <button class="filter-btn active" onclick="filter(this,'all')">전체 <span id="cnt-all"></span></button>
-  <button class="filter-btn" onclick="filter(this,'breaking')">🔴 속보</button>
-  <button class="filter-btn" onclick="filter(this,'military')">⚔️ 군사</button>
-  <button class="filter-btn" onclick="filter(this,'diplomacy')">🤝 외교</button>
-  <button class="filter-btn" onclick="filter(this,'economy')">📈 경제</button>
-</div>
-<div class="timeline" id="timeline"><div class="loading">뉴스를 불러오는 중...</div></div>
+
+<main class="main" id="cards">
+
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 20:00</span>
+        <span class="source">The Guardian</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.theguardian.com/us-news/live/2026/mar/02/democrats-to-force-vote-in-congress-to-limit-trumps-war-powers-against-iran-us-politics-live" target="_blank">민주당, 이란 작전 비공개 브리핑서 트럼프 측 '불충분한' 답변 비난</a></h2>
+      <p class="card-summary">민주당 의원들이 이란 군사 작전 관련 비공개 의회 브리핑에서 트럼프 행정부의 설명이 '완전히 불충분'하다고 맹비난했다. 이란 교전에서 미군 사망자 4명 확인. (Guardian)</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-other">⚪ 기타</span>
+        
+        <span class="time">2026-03-02 11:59</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/cy4w728kl4ko" target="_blank">하메네이 사망 후 미국 내 이란계 시민들 거리로…희망과 불안 교차</a></h2>
+      <p class="card-summary">미국 여러 도시에서 수백 명의 이란계 미국인들이 하메네이 사망을 기념해 집회를 열었다. 그러나 모든 이란계가 이를 반긴 것은 아니다. (BBC)</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-03 02:37</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/c5y4v8gndz1o" target="_blank">쿠웨이트 상공서 미 전투기 격추…쿠웨이트 방공망에 의한 '오인 사격'</a></h2>
+      <p class="card-summary">센트콤에 따르면 미 전투기들이 쿠웨이트 방공망에 의해 오인 격추됐지만 탑승 승무원들은 모두 생존했다고 밝혔다. (BBC)</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 22:54</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/cx2jyv3jp01o" target="_blank">'집이 흔들릴 정도로 심하게 폭격'…이란 시민들이 전하는 미-이스라엘 공습</a></h2>
+      <p class="card-summary">이란 시민들이 BBC에 밤낮으로 폭발음이 들린다고 전했다. 미국과 이스라엘이 사흘째 공습을 이어가는 가운데 이란 전역에서 피해가 확산되고 있다. (BBC)</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-03 05:31</span>
+        <span class="source">The Guardian</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.theguardian.com/world/2026/mar/02/trump-iran-strikes-right-wing-conservative-media" target="_blank">트럼프의 이란 공습, 미국 보수 언론 분열시켜…'배신' vs '정당한 공격'</a></h2>
+      <p class="card-summary">트럼프의 이란 공격 결정이 미국 우파 언론을 분열시켰다. 일부는 지지하지만, MAGA 고립주의자들은 '미국 우선주의' 약속 위반이라며 강력 반발하고 있다. (Guardian)</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 22:31</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/cqj9g11p1ezo" target="_blank">영국, 미국의 이란 미사일 기지 타격에 영국 기지 사용 허가…총리 발표</a></h2>
+      <p class="card-summary">영국 총리는 미국이 이란 미사일 시설 공격에 영국 군사 기지를 사용하도록 허용한다고 발표했다. 단, 영국은 공세 작전에 직접 참여하지 않을 것이라고 밝혔다. (BBC)</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-03 13:09</span>
+        <span class="source">The Guardian</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.theguardian.com/world/live/2026/mar/02/us-israel-war-iran-live-updates-attacks-strikes-tehran-lebanon-beirut-hezbollah-dubai-latest-news" target="_blank">이란 드론, 리야드 미 대사관에 화재 발생…이스라엘-미국 전쟁 4일째</a></h2>
+      <p class="card-summary">이란의 드론 공격으로 사우디아라비아 리야드의 미 대사관에 화재가 발생했다. 트럼프는 전쟁이 '다소 시간이 걸릴 수 있다'고 발언했다. (Guardian)</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-other">⚪ 기타</span>
+        
+        <span class="time">2026-03-02 19:48</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/opinions/2026/3/2/ayatollah-ali-khameneis-assassination-will-likely-backfire-here-is-why?traffic_source=rss" target="_blank">Ayatollah Ali Khamenei’s assassination will likely backfire. Here is why</a></h2>
+      <p class="card-summary">Assassinations provide a short-term political boost but lead to long-term disaster.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 19:34</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/video/digital-dilemma/2026/3/2/the-rise-in-war-bets-2?traffic_source=rss" target="_blank">The rise in war bets</a></h2>
+      <p class="card-summary">Al Jazeera&#039;s Linh Nguyen explains the rise in betting on war.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 18:56</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/c75evve6l63o?at_medium=RSS&at_campaign=rss" target="_blank">Oil prices jump and shares fall as conflict escalates</a></h2>
+      <p class="card-summary">Experts have warned that a prolonged conflict could push global energy prices even higher.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 18:27</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/oil-prices-rise-sharply-after-us-israeli-attacks-on-iran?traffic_source=rss" target="_blank">Oil prices rise sharply after US, Israeli attacks on Iran</a></h2>
+      <p class="card-summary">Brent crude is up by 9 percent amid supply concerns as Trump says ‌strikes on Iran could last weeks.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 18:03</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/features/2026/3/2/not-again-gaza-rushes-to-stockpile-amid-iran-war-crossing-closures?traffic_source=rss" target="_blank">‘Not again’: Gaza rushes to stockpile amid Iran war, crossing closures</a></h2>
+      <p class="card-summary">Crossing closures following US-Israel war with Iran spark panic buying in Gaza, where residents fear food shortages.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 17:31</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/what-we-know-on-day-three-of-us-israeli-attacks-on-iran?traffic_source=rss" target="_blank">What we know on day three of US-Israeli attacks on Iran</a></h2>
+      <p class="card-summary">A day after Iranian supreme leader&#039;s killing was confirmed, attacks are reported in Dubai, Cyprus and across the region.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 17:13</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/british-military-base-in-cyprus-targeted-in-suspected-drone-attack?traffic_source=rss" target="_blank">British military base in Cyprus targeted in suspected drone attack</a></h2>
+      <p class="card-summary">The attack marks the first strike on a British military base in Cyprus since 1986, escalating regional tensions.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 16:16</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue?traffic_source=rss" target="_blank">Explosions across Qatar, UAE, Kuwait as Iran’s retaliatory strikes continue</a></h2>
+      <p class="card-summary">Iran&#039;s retaliatory attacks on US assets in the region continue for a third day as fears of a prolonged conflict rise.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 16:16</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/irans-larijani-refutes-claims-tehran-pushed-to-resume-us-talks?traffic_source=rss" target="_blank">Iran’s Larijani refutes claims Tehran pushed to resume US talks</a></h2>
+      <p class="card-summary">The comments come after US media reported a diplomatic push following the killing of Iran&#039;s supreme leader.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 14:38</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/features/2026/3/2/hold-analysis-khameneis-killing-leaves-irans-axis-in-disarray?traffic_source=rss" target="_blank">Analysis: Khamenei’s killing leaves Iran’s ‘axis’ in disarray as war widens</a></h2>
+      <p class="card-summary">While Hezbollah launches preemptive strikes, Tehran tells Al Jazeera it doesn&#039;t need outside help in defending itself.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 14:36</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/features/2026/3/2/after-irans-salvo-hit-their-skylines-will-the-gulf-states-enter-the-war?traffic_source=rss" target="_blank">After Iran’s salvo hit their skylines, will Gulf states enter the war?</a></h2>
+      <p class="card-summary">Despite Iranian hits on Gulf cities, regional voices warn against direct involvement - insisting this is not their war.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 14:08</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/clyzklvk79yo?at_medium=RSS&at_campaign=rss" target="_blank">Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards</a></h2>
+      <p class="card-summary">The US star's best actor win for Sinners leaves the Oscars race too close to call.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 12:55</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/2/al-jazeera-reports-from-beirut-as-residents-flee-following-israeli-strikes?traffic_source=rss" target="_blank">Al Jazeera reports from Beirut as residents flee following Israeli strikes</a></h2>
+      <p class="card-summary">Tens of thousands of Lebanese civilians are leaving areas in Beirut following Israeli strikes and forced displacement.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 11:32</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/2/israel-bombs-beirut-after-hezbollah-fires-rockets-in-iran-war-retaliation?traffic_source=rss" target="_blank">Israel bombs Beirut after Hezbollah fires rockets in Iran war retaliation</a></h2>
+      <p class="card-summary">Israel has carried out heavy strikes in the southern suburbs of Lebanon’s capital Beirut.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 10:30</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/2/netanyahu-vows-increasing-strikes-on-tehran?traffic_source=rss" target="_blank">Netanyahu vows increasing strikes on Tehran</a></h2>
+      <p class="card-summary">Israel’s prime minister says strikes on Tehran will increase in the coming days, with US support.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 10:20</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/poll-suggests-only-a-quarter-of-americans-support-attacks-on-iran?traffic_source=rss" target="_blank">Poll suggests only a quarter of Americans support attacks on Iran</a></h2>
+      <p class="card-summary">US lawmakers heap pressure on Trump following the first US soldier deaths after Khamenei&#039;s killing.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 10:17</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/2/tehran-comes-under-attack-from-new-round-of-israeli-strikes?traffic_source=rss" target="_blank">Tehran comes under attack from new round of Israeli strikes</a></h2>
+      <p class="card-summary">Videos show heavy bombardment of Tehran after Israel’s military said it had launched another wave of attacks on Iran.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 10:14</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/2/raqi-police-disperse-pro-iran-protesters-near-us-embassy?traffic_source=rss" target="_blank">Iraqi police disperse pro-Iran protesters near US embassy</a></h2>
+      <p class="card-summary">Iraqi riot police fired warning shots and tear gas to disperse pro-Iran protesters near the US embassy in Baghdad.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 10:02</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/fury-on-pakistan-streets-20-dead-after-us-israel-strike-kills-khamenei?traffic_source=rss" target="_blank">Anger on Pakistan streets, 20 dead, after US-Israel strike kills Khamenei</a></h2>
+      <p class="card-summary">At least 20 people killed across Pakistan as demonstrations over strike on Tehran spiral into violence.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 09:58</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/israel-bombs-beirut-after-hezbollah-launches-rocket-attack?traffic_source=rss" target="_blank">Israel kills 31 in Beirut strike following Hezbollah rocket attack</a></h2>
+      <p class="card-summary">Israel&#039;s defence minister says Hezbollah leader is a &#039;target for assassination&#039; after attacks kill 31 people in Lebanon.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 08:18</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/videos/cvgk8vj56v1o?at_medium=RSS&at_campaign=rss" target="_blank">Watch: Retaliations continue on day two of US-Israel attacks on Iran</a></h2>
+      <p class="card-summary">Donald Trump warned of more US deaths after three US service members have been killed in action on the second day of US-Israel attack on Iran.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 07:30</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/live/cy0dp1l57nxt" target="_blank">이스라엘 공격으로 레바논 최소 31명 사망…중동 전역 이란 공격 계속</a></h2>
+      <p class="card-summary">이스라엘이 헤즈볼라 공격에 대한 보복으로 레바논을 타격해 최소 31명 사망. 이란의 공격은 사이프러스 영국군 기지와 쿠웨이트 미군 항공기까지 확대됐으며, 미군 항공기 여러 대가 쿠웨이트에서 추락.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 07:24</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/c363zkp1pgxo?at_medium=RSS&at_campaign=rss" target="_blank">Nine dead in missile attack on Israel as Iran strikes region</a></h2>
+      <p class="card-summary">Several deaths are reported across the Middle East as Tehran retaliates for massive strikes by the US and Israel.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 07:19</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/c1jk922dgjgo?at_medium=RSS&at_campaign=rss" target="_blank">Allies of US in the Gulf bear brunt of Iran attacks</a></h2>
+      <p class="card-summary">Iran's attacks on Gulf Arab states suggest the Islamic Republic is targeting not just the US military but also civilian infrastructure.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 07:00</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/live/cy0dp1l57nxt" target="_blank">이란, 사이프러스 영국군 기지 공격…NATO 회원국으로 확전 우려</a></h2>
+      <p class="card-summary">이란이 사이프러스에 주둔한 영국군 기지를 공격한 것으로 알려져 충격. NATO 회원국인 영국 기지 공격으로 서방의 대응 수위에 대한 우려가 급격히 고조.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 06:55</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live" target="_blank">이란 지도부, 하메네이 승계 과정서 침착함 과시…결속 강조</a></h2>
+      <p class="card-summary">이란 생존 지도부가 하메네이 사후 승계 과정을 차분하게 진행하며 내부 결속을 강조. 외부의 기대와 달리 정권 붕괴 조짐 없이 헌법 절차 진행 중.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 06:50</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/2/baby-and-patients-evacuated-as-israel-attacks-tehran-hospital" target="_blank">이스라엘, 테헤란 간디병원 공격…인큐베이터 신생아 긴급 대피</a></h2>
+      <p class="card-summary">이스라엘이 테헤란 북부 간디병원을 공격해 인큐베이터 안 신생아를 포함한 환자들이 긴급 대피했다. 민간 의료시설 공격으로 국제사회 강한 비난 예상.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 06:45</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/cx2dyz6p3weo?at_medium=RSS&at_campaign=rss" target="_blank">What we know so far about the US-Israel attacks and Iran's retaliation</a></h2>
+      <p class="card-summary">Iran responds by launching missiles and drones towards Israel and four Gulf Arab countries that host US military bases.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 06:40</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live" target="_blank">주쿠웨이트 미 대사관, 미사일·드론 위협 지속 경보 발령</a></h2>
+      <p class="card-summary">주쿠웨이트 미국 대사관이 이란의 미사일 및 드론 위협이 계속되고 있다며 자국민에게 대피 경보를 발령. 걸프 지역 전반에 걸쳐 위협 수위 상승 중.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 06:30</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/live/cy0dp1l57nxt" target="_blank">이란, 키프로스 영국군 기지에 드론 공격 의심…전선 유럽까지 확대</a></h2>
+      <p class="card-summary">이란이 키프로스에 위치한 영국군 기지에 드론 공격을 감행한 것으로 의심되고 있다. 사실로 확인될 경우 전쟁이 유럽 영토까지 확대되는 심각한 상황.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 06:30</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/live/cy0dp1l57nxt" target="_blank">쿠웨이트서 미군 항공기 여러 대 추락…이란 공격 피해</a></h2>
+      <p class="card-summary">쿠웨이트에서 미군 항공기 여러 대가 추락했다고 BBC가 보도. 이란의 쿠웨이트 미군 기지 공격과 연관된 것으로 추정되며 추가 인명피해 우려.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 05:30</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/dramatic-moment-irans-retaliatory-missile-barrage-hits-israel" target="_blank">이란 미사일 이스라엘 방어망 뚫는 순간 영상 공개…충격</a></h2>
+      <p class="card-summary">이란의 탄도미사일이 이스라엘의 철의 돔·애로우 방어 시스템을 뚫고 지상 목표물에 명중하는 영상이 공개돼 충격. 이스라엘 방공망의 한계 노출.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 05:00</span>
+        <span class="source">CBS News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.cbsnews.com/live-updates/us-iran-war-israel-supreme-leader-khamenei-funeral-day-2/" target="_blank">트럼프 "이란 작전 4~5주 더 계속될 것" 예고</a></h2>
+      <p class="card-summary">트럼프 대통령이 이란에 대한 군사작전이 향후 4~5주 더 계속될 것이라고 전망. 추가 미군 사상자 발생 가능성을 언급하며 장기전 대비 시사.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 05:00</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live" target="_blank">이란 "미국과 협상 없다"…핵협상 재개설 강력 부인</a></h2>
+      <p class="card-summary">이란 국가안보회의 라리자니 총서기가 미국과의 핵협상 재개 가능성을 보도한 미국 언론을 강력 부인. '협상은 없다'는 입장을 명확히 하며 전쟁 지속 의지 천명.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 05:00</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/live/cy0dp1l57nxt" target="_blank">이스라엘, 레바논서 수십명 사망케 해…헤즈볼라와 전면전 양상</a></h2>
+      <p class="card-summary">레바논 보건부가 이스라엘 공습으로 최소 31명이 사망했다고 발표. 헤즈볼라와 이스라엘 간 교전이 전면전 양상으로 확대되며 중동 전쟁 다중 전선화.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 04:47</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/c5y6jvlv83ro?at_medium=RSS&at_campaign=rss" target="_blank">War photographer Paul Conroy dies as tributes paid</a></h2>
+      <p class="card-summary">Jamie Doran played the photographer, who has died aged 61, in the 2018 movie A Private War.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 04:30</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/israel-bombs-beirut-after-hezbollah-launches-rocket-attack" target="_blank">이스라엘, 베이루트 폭격…헤즈볼라 로켓 공격 보복</a></h2>
+      <p class="card-summary">헤즈볼라가 하메네이 사망에 대한 보복으로 이스라엘에 로켓 공격을 감행하자, 이스라엘이 베이루트를 폭격. 레바논 전선 확대로 중동 전쟁 전면화 우려.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 04:00</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker" target="_blank">이란 사망자 201명으로 증가...부상자 700여명</a></h2>
+      <p class="card-summary">이란 적신월사가 미-이스라엘 공습으로 인한 사망자가 201명, 부상자가 약 700명에 달한다고 발표. 민간인 피해가 계속 증가 중.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 04:00</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker" target="_blank">파키스탄 카라치 반미 시위로 9명 사망...50명 부상</a></h2>
+      <p class="card-summary">파키스탄 카라치에서 미국의 이란 공격에 반대하는 대규모 시위가 발생해 보안군과 충돌. 최소 9명이 사망하고 50여명이 부상.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-diplomacy">🔵 외교</span>
+        <span class="badge imp-major">⭐ 주요</span>
+        <span class="time">2026-03-02 04:00</span>
+        <span class="source">Al Jazeera</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.aljazeera.com/news/2026/3/2/after-irans-salvo-hit-their-skylines-will-gulf-states-enter-the-war" target="_blank">걸프 국가들 딜레마…이란 공격 후 '참전 vs 중립' 기로</a></h2>
+      <p class="card-summary">이란의 걸프 지역 공격으로 사우디, UAE 등 걸프 국가들이 참전 또는 중립 사이에서 심각한 선택 압박을 받고 있다는 분석. 참전 시 이란의 추가 공격 우려.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 03:05</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/articles/cx2lgvg5rl1o?at_medium=RSS&at_campaign=rss" target="_blank">Iran's regime is still intact - the coming days will show if it can hold out</a></h2>
+      <p class="card-summary">Iran's surviving leaders are in crisis mode, battling to project security as US and Israel strikes continue.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 03:00</span>
+        <span class="source">NBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.nbcnews.com/world/iran/live-blog/iran-attack-strikes-us-israel-trump-khamenei-dead-live-updates-rcna261172" target="_blank">이스라엘, 테헤란 중심부에 새로운 공습 감행</a></h2>
+      <p class="card-summary">이스라엘군이 일요일 테헤란 중심부의 이란 군사시설에 대규모 공습 실시. 이스라엘 공군은 제공권 확보를 위한 작전이라고 밝혀.</p>
+    </article>
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat cat-military">🔴 군사</span>
+        <span class="badge imp-breaking">🚨 속보</span>
+        <span class="time">2026-03-02 03:00</span>
+        <span class="source">BBC News</span>
+      </div>
+      <h2 class="card-title"><a href="https://www.bbc.com/news/live/cy0dp1l57nxt" target="_blank">이스라엘, 레바논 50개 마을 주민 대피령…헤즈볼라 로켓 교전</a></h2>
+      <p class="card-summary">이스라엘군이 이란 지원 헤즈볼라의 로켓 공격 후 레바논 내 50개 이상의 마을 주민에게 대피령 발령. 이스라엘-레바논 전선도 동시에 확대되는 양상.</p>
+    </article>
+</main>
 
 <script>
-let allItems = [];
-
-function formatTime(iso) {
-  const d = new Date(iso);
-  return d.toLocaleString("ko-KR", {month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Asia/Seoul"});
-}
-function importanceLabel(i) { return {breaking:"🔴 속보", major:"주요", normal:"일반"}[i] || i; }
-function categoryLabel(c) { return {military:"군사", diplomacy:"외교", economy:"경제", other:"기타"}[c] || c; }
-
-function render(items) {
-  const tl = document.getElementById("timeline");
-  if (!items.length) { tl.innerHTML = '<div class="empty">해당 카테고리 뉴스가 없습니다.</div>'; return; }
-  tl.innerHTML = items.map(item => `
-    <div class="item" data-importance="${item.importance}" data-category="${item.category}">
-      <div class="item-time">${formatTime(item.time)}</div>
-      <div class="item-body">
-        <div class="item-badges">
-          <span class="badge badge-${item.importance}">${importanceLabel(item.importance)}</span>
-          <span class="badge badge-${item.category}">${categoryLabel(item.category)}</span>
-        </div>
-        <div class="item-title">${item.title}</div>
-        <div class="item-summary">${item.summary}</div>
-        <a class="item-source" href="${item.url}" target="_blank" rel="noopener">↗ ${item.source}</a>
-      </div>
-    </div>`).join("");
-}
-
-function filter(btn, type) {
-  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-  const items = type === "all" ? allItems :
-    type === "breaking" ? allItems.filter(i => i.importance === "breaking") :
-    allItems.filter(i => i.category === type);
-  render(items);
-}
-
-// 캐시 무효화: 매 요청마다 타임스탬프 쿼리 추가
-fetch('news-data.json?v=' + Date.now(), { cache: 'no-store' })
-  .then(r => r.json())
-  .then(data => {
-    allItems = (data.items || []).sort((a,b) => new Date(b.time) - new Date(a.time));
-    document.getElementById("lastUpdated").textContent = formatTime(data.lastUpdated);
-    document.getElementById("cnt-all").textContent = allItems.length + "건";
-    render(allItems);
-  })
-  .catch(() => {
-    document.getElementById("timeline").innerHTML = '<div class="empty">데이터를 불러오지 못했습니다. 잠시 후 새로고침 해주세요.</div>';
+function filterCards(type) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.card').forEach(card => {
+    if (type === 'all') { card.style.display = ''; return; }
+    if (type === 'breaking') {
+      card.style.display = card.querySelector('.imp-breaking') ? '' : 'none';
+      return;
+    }
+    card.style.display = card.querySelector('.cat-' + type) ? '' : 'none';
   });
+}
 </script>
 </body>
 </html>

@@ -1,6 +1,76 @@
 {
-  "lastUpdated": "2026-03-02T20:12:16.676362+09:00",
+  "lastUpdated": "2026-03-03T13:09:00+09:00",
   "items": [
+    {
+      "id": "democrat-slams-trump-iran-war-powers-03020000",
+      "time": "2026-03-02T20:00:00+09:00",
+      "title": "민주당, 이란 작전 비공개 브리핑서 트럼프 측 '불충분한' 답변 비난",
+      "summary": "민주당 의원들이 이란 군사 작전 관련 비공개 의회 브리핑에서 트럼프 행정부의 설명이 '완전히 불충분'하다고 맹비난했다. 이란 교전에서 미군 사망자 4명 확인. (Guardian)",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/live/2026/mar/02/democrats-to-force-vote-in-congress-to-limit-trumps-war-powers-against-iran-us-politics-live",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "us-iranians-streets-khamenei-toppled-03021159",
+      "time": "2026-03-02T11:59:25+09:00",
+      "title": "하메네이 사망 후 미국 내 이란계 시민들 거리로…희망과 불안 교차",
+      "summary": "미국 여러 도시에서 수백 명의 이란계 미국인들이 하메네이 사망을 기념해 집회를 열었다. 그러나 모든 이란계가 이를 반긴 것은 아니다. (BBC)",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cy4w728kl4ko",
+      "category": "other",
+      "importance": "normal"
+    },
+    {
+      "id": "us-jets-shot-down-kuwait-friendly-fire-03030237",
+      "time": "2026-03-03T02:37:27+09:00",
+      "title": "쿠웨이트 상공서 미 전투기 격추…쿠웨이트 방공망에 의한 '오인 사격'",
+      "summary": "센트콤에 따르면 미 전투기들이 쿠웨이트 방공망에 의해 오인 격추됐지만 탑승 승무원들은 모두 생존했다고 밝혔다. (BBC)",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c5y4v8gndz1o",
+      "category": "military",
+      "importance": "breaking"
+    },
+    {
+      "id": "iranians-house-shaking-us-israel-attacks-03022254",
+      "time": "2026-03-02T22:54:20+09:00",
+      "title": "'집이 흔들릴 정도로 심하게 폭격'…이란 시민들이 전하는 미-이스라엘 공습",
+      "summary": "이란 시민들이 BBC에 밤낮으로 폭발음이 들린다고 전했다. 미국과 이스라엘이 사흘째 공습을 이어가는 가운데 이란 전역에서 피해가 확산되고 있다. (BBC)",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cx2jyv3jp01o",
+      "category": "military",
+      "importance": "major"
+    },
+    {
+      "id": "trump-iran-strikes-divide-conservative-media-03030531",
+      "time": "2026-03-03T05:31:30+09:00",
+      "title": "트럼프의 이란 공습, 미국 보수 언론 분열시켜…'배신' vs '정당한 공격'",
+      "summary": "트럼프의 이란 공격 결정이 미국 우파 언론을 분열시켰다. 일부는 지지하지만, MAGA 고립주의자들은 '미국 우선주의' 약속 위반이라며 강력 반발하고 있다. (Guardian)",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/mar/02/trump-iran-strikes-right-wing-conservative-media",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "uk-allow-us-bases-strike-iran-missiles-03022231",
+      "time": "2026-03-02T22:31:10+09:00",
+      "title": "영국, 미국의 이란 미사일 기지 타격에 영국 기지 사용 허가…총리 발표",
+      "summary": "영국 총리는 미국이 이란 미사일 시설 공격에 영국 군사 기지를 사용하도록 허용한다고 발표했다. 단, 영국은 공세 작전에 직접 참여하지 않을 것이라고 밝혔다. (BBC)",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cqj9g11p1ezo",
+      "category": "diplomacy",
+      "importance": "major"
+    },
+    {
+      "id": "israel-us-war-fire-us-embassy-riyadh-03031309",
+      "time": "2026-03-03T13:09:29+09:00",
+      "title": "이란 드론, 리야드 미 대사관에 화재 발생…이스라엘-미국 전쟁 4일째",
+      "summary": "이란의 드론 공격으로 사우디아라비아 리야드의 미 대사관에 화재가 발생했다. 트럼프는 전쟁이 '다소 시간이 걸릴 수 있다'고 발언했다. (Guardian)",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/live/2026/mar/02/us-israel-war-iran-live-updates-attacks-strikes-tehran-lebanon-beirut-hezbollah-dubai-latest-news",
+      "category": "military",
+      "importance": "breaking"
+    },
     {
       "id": "ayatollah-ali-khamenei-s-assassination-will-likely-03021948",
       "time": "2026-03-02T19:48:55+09:00",
@@ -428,76 +498,6 @@
       "summary": "이스라엘군이 이란 지원 헤즈볼라의 로켓 공격 후 레바논 내 50개 이상의 마을 주민에게 대피령 발령. 이스라엘-레바논 전선도 동시에 확대되는 양상.",
       "source": "BBC News",
       "url": "https://www.bbc.com/news/live/cy0dp1l57nxt",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "israel-casualties-11-total",
-      "time": "2026-03-02T02:00:00Z",
-      "title": "이스라엘 사망자 최소 11명...베이트 셰메시 9명 사망",
-      "summary": "이란의 미사일 공격으로 베이트 셰메시에서 9명, 텔아비브에서 2명 등 최소 11명의 이스라엘인이 사망. 이란 보복 공격으로 인한 피해 확대.",
-      "source": "Jewish Insider",
-      "url": "https://jewishinsider.com/2026/03/iran-war-update-missile-strikes-israel-casualties/",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "asian-markets-plunge-iran-war",
-      "time": "2026-03-02T02:00:00Z",
-      "title": "아시아 증시 일제 급락...닛케이 2% 하락, 코스피도 하락",
-      "summary": "미-이란 전쟁 확전 우려로 아시아 증시가 일제히 급락. 일본 닛케이 지수는 2% 하락하며 개장, 한국과 중국 증시도 동반 하락세.",
-      "source": "뉴스1",
-      "url": "https://www.news1.kr/world/usa-canada/6087191",
-      "category": "economy",
-      "importance": "major"
-    },
-    {
-      "id": "iran-new-supreme-leader-days",
-      "time": "2026-03-02T02:00:00Z",
-      "title": "이란 외무장관 \"수일 내 새 최고지도자 선출 가능\"",
-      "summary": "이란 아라그치 외무장관이 헌법 절차에 따라 수일 내 새 최고지도자가 선출될 수 있다고 밝혀. 테헤란은 40일 애도 기간을 선포하며 저항 의지를 강조.",
-      "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/3/1/iran-foreign-minister-suggests-new-supreme-leader-may-be-chosen-within-days",
-      "category": "diplomacy",
-      "importance": "major"
-    },
-    {
-      "id": "hezbollah-joins-iran-war",
-      "time": "2026-03-02T01:00:00Z",
-      "title": "헤즈볼라, 이란 편에서 전쟁 참전...이스라엘에 로켓 공격",
-      "summary": "레바논 헤즈볼라가 이란을 지원하기 위해 전쟁에 공식 참전했다고 발표. 이스라엘 북부 지역에 대규모 로켓 공격을 감행하며 중동 전쟁이 더욱 확대.",
-      "source": "CNN",
-      "url": "https://www.cnn.com/world/live-news/us-israel-iran-attack-03-01-26-intl",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "yonhap-day3-tehran-explosions",
-      "time": "2026-03-02T01:00:00Z",
-      "title": "교전 사흘째…테헤란 곳곳 폭발음 계속",
-      "summary": "미-이스라엘 대 이란 교전이 사흘째 지속되며 테헤란 곳곳에서 폭발음이 이어지고 있다. 이란 군은 방공망을 총가동 중이나 연속 공습으로 일부 무력화된 것으로 알려져.",
-      "source": "연합뉴스",
-      "url": "https://www.yna.co.kr",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "at-least-153-dead-after-reported-strike-on-school-03020032",
-      "time": "2026-03-02T00:32:26+09:00",
-      "title": "At least 153 dead after reported strike on school, Iran says",
-      "summary": "Iran has blamed the US and Israel for the strike; the US is looking into reports of the incident, while the IDF says it is \"not aware\" of operations in the area.",
-      "source": "BBC News",
-      "url": "https://www.bbc.com/news/articles/c1l7rvqq51eo?at_medium=RSS&at_campaign=rss",
-      "category": "military",
-      "importance": "breaking"
-    },
-    {
-      "id": "months-of-planning-behind-us-israeli-mission-to-ta-03012345",
-      "time": "2026-03-01T23:45:56+09:00",
-      "title": "Months of planning behind US-Israeli mission to target Iran's supreme leader",
-      "summary": "A piece of crucial intelligence arrived just hours before the attack on a compound in central Tehran.",
-      "source": "BBC News",
-      "url": "https://www.bbc.com/news/articles/c86y5540vnno?at_medium=RSS&at_campaign=rss",
       "category": "military",
       "importance": "breaking"
     }
